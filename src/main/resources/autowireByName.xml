@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="markslist" class="com.example.autowire.name.MarksList">
+        <property name="name" value="Syed"/>
+        <property name="grade" value="9.3"/>
+        <property name="expert" value="Coding"/>
+        <property name="rank" value="1"/>
+    </bean>
+    <bean id="syed" class="com.example.autowire.name.Student" autowire="byName"/>
+</beans>
